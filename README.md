@@ -2,6 +2,19 @@
 
 Previous version: [gist.github.com](https://gist.github.com/0xarthurxyz/8ba2eefd99c8f72ec50684605fb08be5)
 
+| Topics | Commands |
+| --- | --- |
+Setup and Config | [git](https://git-scm.com/docs/git), [config](https://git-scm.com/docs/git-config), [help](https://git-scm.com/docs/git-help)
+Getting and Creating Projects | [init](https://git-scm.com/docs/git-init), [clone](https://git-scm.com/docs/git-clone)
+Basic Snapshotting | [add](https://git-scm.com/docs/git-add), [status](https://git-scm.com/docs/git-status), [diff](https://git-scm.com/docs/git-diff), [commit](https://git-scm.com/docs/git-commit), [notes](https://git-scm.com/docs/git-notes), [restore](https://git-scm.com/docs/git-restore), [reset](https://git-scm.com/docs/git-reset), [rm](https://git-scm.com/docs/git-rm), [mv](https://git-scm.com/docs/git-mv)
+Branching and Merging | [branch](https://git-scm.com/docs/git-branch), [checkout](https://git-scm.com/docs/git-checkout), [switch](https://git-scm.com/docs/git-switch), [merge](https://git-scm.com/docs/git-merge), [mergetool](https://git-scm.com/docs/git-mergetool), [log](https://git-scm.com/docs/git-log), [stash](https://git-scm.com/docs/git-stash), [tag](https://git-scm.com/docs/git-tag), [worktree](https://git-scm.com/docs/git-worktree)
+Sharing and Updating Projects | [fetch](https://git-scm.com/docs/git-fetch), [pull](https://git-scm.com/docs/git-pull), [push](https://git-scm.com/docs/git-push), [remote](https://git-scm.com/docs/git-remote), [submodule](https://git-scm.com/docs/git-submodule)
+Inspection and Comparison | [show](https://git-scm.com/docs/git-show), [log](https://git-scm.com/docs/git-log), [diff](https://git-scm.com/docs/git-diff), [difftool](https://git-scm.com/docs/git-difftool), [range-diff](https://git-scm.com/docs/git-range-diff), [shortlog](https://git-scm.com/docs/git-shortlog), [describe](https://git-scm.com/docs/git-describe)
+Patching | [apply](https://git-scm.com/docs/git-apply), [cherry-pick](https://git-scm.com/docs/git-cherry-pick), [diff](https://git-scm.com/docs/git-diff), [rebase](https://git-scm.com/docs/git-rebase), [revert](https://git-scm.com/docs/git-revert)
+Debugging | [bisect](https://git-scm.com/docs/git-bisect), [blame](https://git-scm.com/docs/git-blame), [grep](https://git-scm.com/docs/git-grep)
+
+Source: [git-scm.com](https://git-scm.com/docs)
+
 ## Typical workflows
 
 ### Reset local branch to match remote branch
@@ -343,3 +356,5 @@ First make the changes you think you forgot, stage those changes, and the subseq
 > It's like a very small rebase --- don't amend your last commit if you've already pushed it.
 
 Source: [git-scm.com](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History)
+
+## Patching
