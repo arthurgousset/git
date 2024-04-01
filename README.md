@@ -97,6 +97,83 @@ upstream repository. Since you're working alone on this fork, it's safe to do so
     affect them. Since you're working alone, this may not be a concern, but it's something to keep 
     in mind when collaborating with others.
 
+### Re-writing commit history that has already been pushed to remote 
+
+Source: ChatGPT
+
+If you want to rewrite the commit history of a branch, you can use an interactive rebase.
+
+> [!WARNING]
+> Rewriting commit history, especially on shared branches, can lead to complications for others who might have based their work on those commits. 
+
+1. Create a backup branch (optional):
+
+    ```sh
+    git checkout -b <backup-branch>
+    ```
+
+    It's a good practice to create a backup branch of your current state, so you can easily revert if something goes wrong.
+
+1. Start the Interactive Rebase
+
+    ```sh
+    git rebase -i HEAD~5
+    ```
+
+    If you want to change the last 5 commits, you'll use the command 
+    `git rebase -i HEAD~5`. 
+    This command tells Git to rebase the last 5 commits interactively.
+
+1. Select Commits to Edit
+
+    Your default text editor opens with a list of the last 5 commits, each prefixed with the word pick. To change a commit message, replace pick with reword or simply r next to the commit you wish to update. Do this for all commits whose messages you want to change. Save and close the editor.
+
+    ```sh
+    pick e3a1b35 Commit message #5
+    pick 7ac9a67 Commit message #4
+    pick 1d2a3f4 Commit message #3
+    pick 4b5c6d7 Commit message #2
+    pick 8e9f0a1 Commit message #1
+    ```
+
+    Change to:
+
+    ```sh
+    reword e3a1b35 Commit message #5
+    reword 7ac9a67 Commit message #4
+    reword 1d2a3f4 Commit message #3
+    reword 4b5c6d7 Commit message #2
+    reword 8e9f0a1 Commit message #1
+    ```
+
+1. Reword Commit Messages
+
+    After closing the editor, Git will pause at each commit you marked for rewording, allowing you to change its commit message. Your editor will open again for each commit, showing the current commit message.
+
+    Edit the message as desired.
+    Save and close the editor to move to the next commit.
+    Repeat this process for each commit you've marked for rewording.
+
+1. Finalizing the Rebase
+
+    Once you've reworded all the commit messages, Git will finish the rebase. If there are no conflicts or issues, your branch's history now reflects the new commit messages.
+
+1. Force Push the Changes to the Remote Repository
+
+    Since you've altered the commit history, you'll need to force push these changes to your remote repository. Use the command:
+
+    ```sh
+    git push origin <your-branch-name> --force
+    ```
+
+1. Delete the Backup Branch (optional)
+
+    If you created a backup branch, you can delete it after you've confirmed that the rebase was successful.
+
+    ```sh
+    git branch -D <backup-branch>
+    ```
+
 ## Branches
 
 ### Open branch from remote repository
