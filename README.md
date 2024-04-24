@@ -17,6 +17,52 @@ Source: [git-scm.com](https://git-scm.com/docs)
 
 ## Typical workflows
 
+## Update `feature-branch` with latest commits from the `main` branch
+
+1. **Checkout the `main` branch**:
+
+   ```sh
+   $ git checkout main
+   ```
+
+2. **Pull the latest changes from the remote `main` branch**:
+
+   ```sh
+   $ git pull origin main
+   ```
+
+3. **Checkout your `feature-branch`**:
+
+   ```sh
+   $ git checkout {{feature-branch}}
+   ```
+
+4. **Merge the changes from the `main` branch into your `feature-branch`**:
+
+   ```sh
+   $ git merge main
+   ```
+
+5. **Resolve any merge conflicts if they occur**: If there are any merge conflicts, you will need to
+   resolve them manually. Git will indicate which files have conflicts, and you can use a text
+   editor or a merge tool to resolve them.
+
+6. **Commit the merge changes**: After resolving any conflicts, you can commit the merge changes to
+   your feature branch:
+
+   ```sh
+   $ git commit -am "Merge changes from main into feature branch"
+   ```
+
+7. **Push the changes to the remote feature branch**:
+
+   ```sh
+   $ git push origin {{feature-branch}}
+   ```
+
+By following these steps, your feature branch will be updated with the latest commits from the
+master branch.
+
 ### Reset local branch to match remote branch
 
 For example, I have a fork of `wagmi-dev/viem` at `0xarthurxyz/viem` and I want my `main`
