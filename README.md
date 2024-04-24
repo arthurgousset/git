@@ -1,17 +1,18 @@
 # Git (Cheat Sheet)
 
-Previous version: [gist.github.com](https://gist.github.com/0xarthurxyz/8ba2eefd99c8f72ec50684605fb08be5)
+Previous version:
+[gist.github.com](https://gist.github.com/0xarthurxyz/8ba2eefd99c8f72ec50684605fb08be5)
 
-| Topics | Commands |
-| --- | --- |
-Setup and Config | [git](https://git-scm.com/docs/git), [config](https://git-scm.com/docs/git-config), [help](https://git-scm.com/docs/git-help)
-Getting and Creating Projects | [init](https://git-scm.com/docs/git-init), [clone](https://git-scm.com/docs/git-clone)
-Basic Snapshotting | [add](https://git-scm.com/docs/git-add), [status](https://git-scm.com/docs/git-status), [diff](https://git-scm.com/docs/git-diff), [commit](https://git-scm.com/docs/git-commit), [notes](https://git-scm.com/docs/git-notes), [restore](https://git-scm.com/docs/git-restore), [reset](https://git-scm.com/docs/git-reset), [rm](https://git-scm.com/docs/git-rm), [mv](https://git-scm.com/docs/git-mv)
-Branching and Merging | [branch](https://git-scm.com/docs/git-branch), [checkout](https://git-scm.com/docs/git-checkout), [switch](https://git-scm.com/docs/git-switch), [merge](https://git-scm.com/docs/git-merge), [mergetool](https://git-scm.com/docs/git-mergetool), [log](https://git-scm.com/docs/git-log), [stash](https://git-scm.com/docs/git-stash), [tag](https://git-scm.com/docs/git-tag), [worktree](https://git-scm.com/docs/git-worktree)
-Sharing and Updating Projects | [fetch](https://git-scm.com/docs/git-fetch), [pull](https://git-scm.com/docs/git-pull), [push](https://git-scm.com/docs/git-push), [remote](https://git-scm.com/docs/git-remote), [submodule](https://git-scm.com/docs/git-submodule)
-Inspection and Comparison | [show](https://git-scm.com/docs/git-show), [log](https://git-scm.com/docs/git-log), [diff](https://git-scm.com/docs/git-diff), [difftool](https://git-scm.com/docs/git-difftool), [range-diff](https://git-scm.com/docs/git-range-diff), [shortlog](https://git-scm.com/docs/git-shortlog), [describe](https://git-scm.com/docs/git-describe)
-Patching | [apply](https://git-scm.com/docs/git-apply), [cherry-pick](https://git-scm.com/docs/git-cherry-pick), [diff](https://git-scm.com/docs/git-diff), [rebase](https://git-scm.com/docs/git-rebase), [revert](https://git-scm.com/docs/git-revert)
-Debugging | [bisect](https://git-scm.com/docs/git-bisect), [blame](https://git-scm.com/docs/git-blame), [grep](https://git-scm.com/docs/git-grep)
+| Topics                        | Commands                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Setup and Config              | [git](https://git-scm.com/docs/git), [config](https://git-scm.com/docs/git-config), [help](https://git-scm.com/docs/git-help)                                                                                                                                                                                                                                                                                                       |
+| Getting and Creating Projects | [init](https://git-scm.com/docs/git-init), [clone](https://git-scm.com/docs/git-clone)                                                                                                                                                                                                                                                                                                                                              |
+| Basic Snapshotting            | [add](https://git-scm.com/docs/git-add), [status](https://git-scm.com/docs/git-status), [diff](https://git-scm.com/docs/git-diff), [commit](https://git-scm.com/docs/git-commit), [notes](https://git-scm.com/docs/git-notes), [restore](https://git-scm.com/docs/git-restore), [reset](https://git-scm.com/docs/git-reset), [rm](https://git-scm.com/docs/git-rm), [mv](https://git-scm.com/docs/git-mv)                           |
+| Branching and Merging         | [branch](https://git-scm.com/docs/git-branch), [checkout](https://git-scm.com/docs/git-checkout), [switch](https://git-scm.com/docs/git-switch), [merge](https://git-scm.com/docs/git-merge), [mergetool](https://git-scm.com/docs/git-mergetool), [log](https://git-scm.com/docs/git-log), [stash](https://git-scm.com/docs/git-stash), [tag](https://git-scm.com/docs/git-tag), [worktree](https://git-scm.com/docs/git-worktree) |
+| Sharing and Updating Projects | [fetch](https://git-scm.com/docs/git-fetch), [pull](https://git-scm.com/docs/git-pull), [push](https://git-scm.com/docs/git-push), [remote](https://git-scm.com/docs/git-remote), [submodule](https://git-scm.com/docs/git-submodule)                                                                                                                                                                                               |
+| Inspection and Comparison     | [show](https://git-scm.com/docs/git-show), [log](https://git-scm.com/docs/git-log), [diff](https://git-scm.com/docs/git-diff), [difftool](https://git-scm.com/docs/git-difftool), [range-diff](https://git-scm.com/docs/git-range-diff), [shortlog](https://git-scm.com/docs/git-shortlog), [describe](https://git-scm.com/docs/git-describe)                                                                                       |
+| Patching                      | [apply](https://git-scm.com/docs/git-apply), [cherry-pick](https://git-scm.com/docs/git-cherry-pick), [diff](https://git-scm.com/docs/git-diff), [rebase](https://git-scm.com/docs/git-rebase), [revert](https://git-scm.com/docs/git-revert)                                                                                                                                                                                       |
+| Debugging                     | [bisect](https://git-scm.com/docs/git-bisect), [blame](https://git-scm.com/docs/git-blame), [grep](https://git-scm.com/docs/git-grep)                                                                                                                                                                                                                                                                                               |
 
 Source: [git-scm.com](https://git-scm.com/docs)
 
@@ -65,24 +66,24 @@ master branch.
 
 ### Reset local branch to match remote branch
 
-For example, I have a fork of `wagmi-dev/viem` at `0xarthurxyz/viem` and I want my `main`
-branch (in `0xarthurxyz/viem`) to match the `main` branch (in `wagmi-dev/viem`) exactly.
-I want 0 files changed, 0 insertions, 0 deletions, 0 commits ahead, 0 commits behind.
+For example, I have a fork of `wagmi-dev/viem` at `0xarthurxyz/viem` and I want my `main` branch (in
+`0xarthurxyz/viem`) to match the `main` branch (in `wagmi-dev/viem`) exactly. I want 0 files
+changed, 0 insertions, 0 deletions, 0 commits ahead, 0 commits behind.
 
-That way, I can create a new branch from `main` and work on it without having to worry about
-merging changes from `wagmi-dev/viem`.
+That way, I can create a new branch from `main` and work on it without having to worry about merging
+changes from `wagmi-dev/viem`.
 
 Step 1: Fetch the Upstream Repository
 
-If you haven't already configured the upstream repository as a remote, you need to add it. 
-The upstream repository is the original repository from which you forked.
+If you haven't already configured the upstream repository as a remote, you need to add it. The
+upstream repository is the original repository from which you forked.
 
 ```sh
 # Check if upstream is already configured
 git remote -v
 
 # If not add it
-git remote add upstream git@github.com:wagmi-dev/viem.git  
+git remote add upstream git@github.com:wagmi-dev/viem.git
 #              ^name    ^url
 ```
 
@@ -92,7 +93,6 @@ After adding the remote, you fetch the changes:
 git fetch upstream
 #         ^name
 ```
-
 
 Step 2: Reset Your Main Branch
 
@@ -110,10 +110,10 @@ git reset --hard upstream/main
 #                ^name    ^branch
 ```
 
-`git reset --hard` moves the current branch's tip to the specified commit, in this case, 
-the tip of the `upstream/main` branch. The `--hard` flag tells Git to also reset the staging area 
-and the working directory to match. This effectively discards all commits in your local `main` 
-branch that are not in the upstream `main` branch.
+`git reset --hard` moves the current branch's tip to the specified commit, in this case, the tip of
+the `upstream/main` branch. The `--hard` flag tells Git to also reset the staging area and the
+working directory to match. This effectively discards all commits in your local `main` branch that
+are not in the upstream `main` branch.
 
 Step 3: Force Push to Your Fork
 
@@ -124,101 +124,108 @@ git push origin main --force
 #        ^name  ^branch
 ```
 
-`git push` updates the remote branch with your local branch's current state. The `--force` flag 
-is necessary here because you're rewriting the commit history of the `main` branch on the remote. 
-This can be destructive, as it will replace the history on GitHub with the history from the 
-upstream repository. Since you're working alone on this fork, it's safe to do so.
+`git push` updates the remote branch with your local branch's current state. The `--force` flag is
+necessary here because you're rewriting the commit history of the `main` branch on the remote. This
+can be destructive, as it will replace the history on GitHub with the history from the upstream
+repository. Since you're working alone on this fork, it's safe to do so.
 
 **Considerations**:
 
--   **Be cautious with `--force`**: Force pushing is a powerful feature that should be used with 
-    caution. It can permanently erase commits if used incorrectly. Always ensure that you're force 
-    pushing to the correct branch and repository.
+- **Be cautious with `--force`**: Force pushing is a powerful feature that should be used with
+  caution. It can permanently erase commits if used incorrectly. Always ensure that you're force
+  pushing to the correct branch and repository.
 
--   **Backup your work**: Before performing operations that rewrite history, such as a hard reset, 
-    it's a good practice to create a backup branch of your current state, just in case you need to 
-    refer back to it.
+- **Backup your work**: Before performing operations that rewrite history, such as a hard reset,
+  it's a good practice to create a backup branch of your current state, just in case you need to
+  refer back to it.
 
--   **Open Pull Requests**: If you have open pull requests from your fork, resetting branches can 
-    affect them. Since you're working alone, this may not be a concern, but it's something to keep 
-    in mind when collaborating with others.
+- **Open Pull Requests**: If you have open pull requests from your fork, resetting branches can
+  affect them. Since you're working alone, this may not be a concern, but it's something to keep in
+  mind when collaborating with others.
 
-### Re-writing commit history that has already been pushed to remote 
+### Re-writing commit history that has already been pushed to remote
 
 Source: ChatGPT
 
 If you want to rewrite the commit history of a branch, you can use an interactive rebase.
 
-> [!WARNING]
-> Rewriting commit history, especially on shared branches, can lead to complications for others who might have based their work on those commits. 
+> [!WARNING] Rewriting commit history, especially on shared branches, can lead to complications for
+> others who might have based their work on those commits.
 
 1. Create a backup branch (optional):
 
-    ```sh
-    git checkout -b <backup-branch>
-    ```
+   ```sh
+   git checkout -b <backup-branch>
+   ```
 
-    It's a good practice to create a backup branch of your current state, so you can easily revert if something goes wrong.
+   It's a good practice to create a backup branch of your current state, so you can easily revert if
+   something goes wrong.
 
 1. Start the Interactive Rebase
 
-    ```sh
-    git rebase -i HEAD~5
-    ```
+   ```sh
+   git rebase -i HEAD~5
+   ```
 
-    If you want to change the last 5 commits, you'll use the command 
-    `git rebase -i HEAD~5`. 
-    This command tells Git to rebase the last 5 commits interactively.
+   If you want to change the last 5 commits, you'll use the command `git rebase -i HEAD~5`. This
+   command tells Git to rebase the last 5 commits interactively.
 
 1. Select Commits to Edit
 
-    Your default text editor opens with a list of the last 5 commits, each prefixed with the word pick. To change a commit message, replace pick with reword or simply r next to the commit you wish to update. Do this for all commits whose messages you want to change. Save and close the editor.
+   Your default text editor opens with a list of the last 5 commits, each prefixed with the word
+   pick. To change a commit message, replace pick with reword or simply r next to the commit you
+   wish to update. Do this for all commits whose messages you want to change. Save and close the
+   editor.
 
-    ```sh
-    pick e3a1b35 Commit message #5
-    pick 7ac9a67 Commit message #4
-    pick 1d2a3f4 Commit message #3
-    pick 4b5c6d7 Commit message #2
-    pick 8e9f0a1 Commit message #1
-    ```
+   ```sh
+   pick e3a1b35 Commit message #5
+   pick 7ac9a67 Commit message #4
+   pick 1d2a3f4 Commit message #3
+   pick 4b5c6d7 Commit message #2
+   pick 8e9f0a1 Commit message #1
+   ```
 
-    Change to:
+   Change to:
 
-    ```sh
-    reword e3a1b35 Commit message #5
-    reword 7ac9a67 Commit message #4
-    reword 1d2a3f4 Commit message #3
-    reword 4b5c6d7 Commit message #2
-    reword 8e9f0a1 Commit message #1
-    ```
+   ```sh
+   reword e3a1b35 Commit message #5
+   reword 7ac9a67 Commit message #4
+   reword 1d2a3f4 Commit message #3
+   reword 4b5c6d7 Commit message #2
+   reword 8e9f0a1 Commit message #1
+   ```
 
 1. Reword Commit Messages
 
-    After closing the editor, Git will pause at each commit you marked for rewording, allowing you to change its commit message. Your editor will open again for each commit, showing the current commit message.
+   After closing the editor, Git will pause at each commit you marked for rewording, allowing you to
+   change its commit message. Your editor will open again for each commit, showing the current
+   commit message.
 
-    Edit the message as desired.
-    Save and close the editor to move to the next commit.
-    Repeat this process for each commit you've marked for rewording.
+   Edit the message as desired. Save and close the editor to move to the next commit. Repeat this
+   process for each commit you've marked for rewording.
 
 1. Finalizing the Rebase
 
-    Once you've reworded all the commit messages, Git will finish the rebase. If there are no conflicts or issues, your branch's history now reflects the new commit messages.
+   Once you've reworded all the commit messages, Git will finish the rebase. If there are no
+   conflicts or issues, your branch's history now reflects the new commit messages.
 
 1. Force Push the Changes to the Remote Repository
 
-    Since you've altered the commit history, you'll need to force push these changes to your remote repository. Use the command:
+   Since you've altered the commit history, you'll need to force push these changes to your remote
+   repository. Use the command:
 
-    ```sh
-    git push origin <your-branch-name> --force
-    ```
+   ```sh
+   git push origin <your-branch-name> --force
+   ```
 
 1. Delete the Backup Branch (optional)
 
-    If you created a backup branch, you can delete it after you've confirmed that the rebase was successful.
+   If you created a backup branch, you can delete it after you've confirmed that the rebase was
+   successful.
 
-    ```sh
-    git branch -D <backup-branch>
-    ```
+   ```sh
+   git branch -D <backup-branch>
+   ```
 
 ## Branches
 
@@ -233,45 +240,44 @@ Source: 
 
 ## Remotes
 
-In Git, "remotes" are pointers to versions of your repository that are hosted on the internet or 
-on a network somewhere, as opposed to being on your local machine.
+In Git, "remotes" are pointers to versions of your repository that are hosted on the internet or on
+a network somewhere, as opposed to being on your local machine.
 
-When you work with Git, you have a local repository that lives on your computer. This repository 
-contains all of your project's files and the history of changes made to those files. However, 
-when you want to share your code with others or synchronize it across multiple computers, you 
-need a way to connect your local repository to a remote location.
+When you work with Git, you have a local repository that lives on your computer. This repository
+contains all of your project's files and the history of changes made to those files. However, when
+you want to share your code with others or synchronize it across multiple computers, you need a way
+to connect your local repository to a remote location.
 
 Under the hood:
 
--   **Configuration Files**: Remotes are configured in the `.git/config` file of your local 
-    repository. This file contains the URLs and settings for your remotes.
+- **Configuration Files**: Remotes are configured in the `.git/config` file of your local
+  repository. This file contains the URLs and settings for your remotes.
 
--   **References**: Remotes work with references, which are pointers to commits. These are stored 
-    in a subdirectory of the `.git` directory called `refs/remotes/`.
+- **References**: Remotes work with references, which are pointers to commits. These are stored in a
+  subdirectory of the `.git` directory called `refs/remotes/`.
 
--   **Network Protocols**: Git supports several protocols for communicating with remotes, 
-    including HTTP, HTTPS, SSH, and Git's own protocol.
+- **Network Protocols**: Git supports several protocols for communicating with remotes, including
+  HTTP, HTTPS, SSH, and Git's own protocol.
 
--   **Security**: When you push to or pull from a remote, Git ensures the integrity of the data 
-    transfer. With SSH, for example, the data is encrypted.
+- **Security**: When you push to or pull from a remote, Git ensures the integrity of the data
+  transfer. With SSH, for example, the data is encrypted.
 
--   **Pruning**: Over time, a remote repository may have branches deleted. To clean up these stale 
-    references, you can use `git fetch` with the `--prune` option.
+- **Pruning**: Over time, a remote repository may have branches deleted. To clean up these stale
+  references, you can use `git fetch` with the `--prune` option.
 
--   **Tags**: Remotes also keep track of tags, which are like snapshots of your repository at a 
-    certain point in time. You can push tags to remotes with `git push --tags`.
+- **Tags**: Remotes also keep track of tags, which are like snapshots of your repository at a
+  certain point in time. You can push tags to remotes with `git push --tags`.
 
--   **Branch Tracking**: Local branches can track remote branches. This means changes in the 
-    remote branch can be pulled into the local branch with a simple `git pull`, without specifying 
-    the remote name and branch.
+- **Branch Tracking**: Local branches can track remote branches. This means changes in the remote
+  branch can be pulled into the local branch with a simple `git pull`, without specifying the remote
+  name and branch.
 
 Source: ChatGPT
 
 ### Existing remotes
 
-When you clone a repository, Git automatically adds a remote called `origin`. 
-This points to the location from which you cloned the repository. 
-You can see which remotes are configured with:
+When you clone a repository, Git automatically adds a remote called `origin`. This points to the
+location from which you cloned the repository. You can see which remotes are configured with:
 
 ```sh
 git remote -v
@@ -289,55 +295,53 @@ upstream	https://github.com/wagmi-dev/viem.git (fetch)
 upstream	https://github.com/wagmi-dev/viem.git (push)
 ```
 
-The output is expected and does not indicate duplicate remotes. In Git, `remote` refers to a 
-remote repository that your local repository can track. Each remote can have multiple URLs 
-associated with it for different actions---typically at least for fetching and pushing changes.
+The output is expected and does not indicate duplicate remotes. In Git, `remote` refers to a remote
+repository that your local repository can track. Each remote can have multiple URLs associated with
+it for different actions---typically at least for fetching and pushing changes.
 
 In the output above, there are two remotes configured for your local repository:
 
-1.  **origin**: This is the default name Git gives to the remote from which you cloned your repo. 
-    It has two URLs listed, one for fetching (`git fetch`, `git pull`) and one for pushing 
-    (`git push`). Both actions are using the SSH protocol, as indicated by the `git@github.com` 
+1.  **origin**: This is the default name Git gives to the remote from which you cloned your repo. It
+    has two URLs listed, one for fetching (`git fetch`, `git pull`) and one for pushing
+    (`git push`). Both actions are using the SSH protocol, as indicated by the `git@github.com`
     syntax.
 
-2.  **upstream**: This is the remote you've added manually, which points to the original repository 
-    (often the one you forked from). Like `origin`, it has a URL for fetching and one for pushing. 
-    In this case, both actions are using the HTTPS protocol, which you can tell by the `https://` 
+2.  **upstream**: This is the remote you've added manually, which points to the original repository
+    (often the one you forked from). Like `origin`, it has a URL for fetching and one for pushing.
+    In this case, both actions are using the HTTPS protocol, which you can tell by the `https://`
     prefix.
-
 
 Having both `origin` and `upstream` is common when you have a forked repository:
 
--   You would use `origin` to push and pull changes to and from your fork.
--   You would use `upstream` to fetch changes from the original repository (which you've forked) 
-    to keep your local repository and your fork up-to-date with the original.
+- You would use `origin` to push and pull changes to and from your fork.
+- You would use `upstream` to fetch changes from the original repository (which you've forked) to
+  keep your local repository and your fork up-to-date with the original.
 
-You have what you need to interact with both your fork (`origin`) and the original repository 
+You have what you need to interact with both your fork (`origin`) and the original repository
 (`upstream`).
 
 Source: ChatGPT
 
 ### Add remote
 
-
-If you want to track another repository in addition to the one you cloned from (for example, 
-the original repository when you're working on a fork), you can add a new remote:
+If you want to track another repository in addition to the one you cloned from (for example, the
+original repository when you're working on a fork), you can add a new remote:
 
 ```sh
 git remote add <name> <url>
 ```
 
-For example, I cloned the repository `wagmi-dev/viem` as `0xarthurxyz/viem` 
-and I want to track the original repository in my local repository. In that case I can add a new
-remote (arbitrarily called `upstream`) that lives at the following URL `https://github.com/wagmi-dev/viem.git`
+For example, I cloned the repository `wagmi-dev/viem` as `0xarthurxyz/viem` and I want to track the
+original repository in my local repository. In that case I can add a new remote (arbitrarily called
+`upstream`) that lives at the following URL `https://github.com/wagmi-dev/viem.git`
 
 ```sh
 git remote add upstream git@github.com:wagmi-dev/viem.git
 #              ^name    ^url
 ```
 
-This command tells Git to add a new remote called `upstream` pointing to the URL of the original 
-repository. Remotes are like bookmarks for repositories that allow you to track the same project in 
+This command tells Git to add a new remote called `upstream` pointing to the URL of the original
+repository. Remotes are like bookmarks for repositories that allow you to track the same project in
 different locations.
 
 Source: ChatGPT
@@ -357,8 +361,7 @@ git remote remove upstream
 #                 ^name
 ```
 
-It's common to remove a remote when you no longer want to track a repository.
-It's 
+It's common to remove a remote when you no longer want to track a repository. It's
 
 ### Fetching from a remote
 
@@ -368,25 +371,23 @@ To bring in the history and changes from a remote repository, you use:
 git fetch <name>
 ```
 
-This command downloads objects and refs from the remote but doesn't merge any changes into your 
+This command downloads objects and refs from the remote but doesn't merge any changes into your
 working files.
 
-For example, after adding the `wagmi-dev/viem` remote as "`upstream`", you fetch the changes
-from the remote by running:
+For example, after adding the `wagmi-dev/viem` remote as "`upstream`", you fetch the changes from
+the remote by running:
 
 ```sh
 git fetch upstream
 #         ^name
 ```
 
-`git fetch` communicates with the upstream repository and downloads the commits, files, and refs 
-to your local repository. This step ensures that you have the latest history of the upstream 
-project, but it doesn't modify your working directory or your current branch.
-In other words, this command downloads objects and refs from the remote but doesn't merge 
-any changes into your working files.
+`git fetch` communicates with the upstream repository and downloads the commits, files, and refs to
+your local repository. This step ensures that you have the latest history of the upstream project,
+but it doesn't modify your working directory or your current branch. In other words, this command
+downloads objects and refs from the remote but doesn't merge any changes into your working files.
 
 Source: ChatGPT
-
 
 ### Pushing to a remote
 
@@ -418,8 +419,8 @@ This is effectively a `git fetch` followed by a `git merge`.
 git log --oneline --graph --decorate --all
 ```
 
-This command shows you the commit history with all branches and tags decorated with their 
-names, presented in a graph structure to illustrate forks and merges.
+This command shows you the commit history with all branches and tags decorated with their names,
+presented in a graph structure to illustrate forks and merges.
 
 For example, in my `viem` fork I have the following commit graph:
 
@@ -427,11 +428,11 @@ For example, in my `viem` fork I have the following commit graph:
 ~/Documents/0xarthurxyz/viem main $ git log --oneline --graph --decorate --all
 
 *   721fc122 (HEAD -> main, origin/main, origin/HEAD) Merge branch 'wagmi-dev:main' into main
-|\  
+|\
 | * 291e9ba2 chore: version package (#1459)
 | * 46213902 fix: undefined nativeCurrency - fixes #1457
 * | ec233f4b Merge branch 'wagmi-dev:main' into main
-|\| 
+|\|
 | * 6ae86cee chore: version package (#1456)
 | * 880345ca chore: update snapshots
 | * e40006aa feat: add Kava Testnet and edited Kava Mainnet RPC (#1453)
@@ -454,16 +455,16 @@ If you simply want to modify your last commit message, that's easy:
 git commit --amend
 ```
 
-The command above loads the previous commit message into an editor session, where you can make 
-changes to the message, save those changes and exit. When you save and close the editor, the 
-editor writes a new commit containing that updated commit message and makes it your new last commit.
+The command above loads the previous commit message into an editor session, where you can make
+changes to the message, save those changes and exit. When you save and close the editor, the editor
+writes a new commit containing that updated commit message and makes it your new last commit.
 
 Source: [git-scm.com](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History)
 
 ### Changing the last commit content
 
-If you want to change the actual *content* of your last commit, the process works basically the 
-same way:
+If you want to change the actual *content* of your last commit, the process works basically the same
+way:
 
 ```sh
 git add file # stage the changes you want to add
@@ -474,10 +475,8 @@ git commit --amend # replace the last commit with the staged changes
 First make the changes you think you forgot, stage those changes, and the subsequent 
 `git commit --amend` *replaces* that last commit with your new, improved commit.
 
-> **NOTE** 
-> You need to be careful with this technique because amending changes the SHA-1 of the commit. 
-> It's like a very small rebase --- don't amend your last commit if you've already pushed it.
+> **NOTE** You need to be careful with this technique because amending changes the SHA-1 of the
+> commit. It's like a very small rebase --- don't amend your last commit if you've already pushed
+> it.
 
 Source: [git-scm.com](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History)
-
-## Patching
