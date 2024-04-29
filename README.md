@@ -227,6 +227,53 @@ If you want to rewrite the commit history of a branch, you can use an interactiv
    git branch -D <backup-branch>
    ```
 
+### Update fork with latest changes from `upstream` (incl. resolve conflicts)
+
+Source: ChatGPT
+
+1. **Fetch the latest changes from the upstream repository**:
+
+   ```sh
+   git checkout main
+   git fetch upstream
+   ```
+
+2. **Merge or rebase your branch with the upstream's `main`**:
+
+   - **Merge** (This keeps history; may introduce a merge commit if conflicts exist):
+     ```bash
+     git merge upstream/main  # This might prompt you to resolve conflicts
+     ```
+   - **Rebase** (This rewrites history to make it linear):
+     ```bash
+     git rebase upstream/main  # Resolve conflicts as they appear
+     ```
+
+3. **Resolve any conflicts that arise**:
+
+   - Manually edit the files marked as conflicts.
+   - After editing, mark each resolved file with:
+     ```bash
+     git add [file]
+     ```
+
+4. **Complete the merge or rebase**:
+
+   - If merging:
+     ```bash
+     git commit  # This is needed only if there were conflicts
+     ```
+   - If rebasing:
+     ```bash
+     git rebase --continue  # Do this after each conflict resolution
+     ```
+
+5. **Push the changes to your fork**:
+
+   ```sh
+   git push origin main
+   ```
+
 ## Concepts and Syntax
 
 ## Branches
