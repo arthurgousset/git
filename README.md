@@ -535,25 +535,26 @@ Source: ChatGPT
 
 Source: Warp AI
 
-Cut a new `other-feature-branch` branch (probably from `main`, but possibly also from the existing `feature-branch` from which we'll cherry pick) 
+1.  Find the hash of the commit you'd like to move
 
-```sh
-git checkout main
-git checkout -b {{other-feature-branch}}
-```
+    ```sh
+    # Visualise the commit history
+    git log --oneline --graph --decorate --all
 
-Find the hash of the commit you'd like to move
+    # Inspect the diff of a single commit
+    git show {{hash}} 
+    ```
 
-```sh
-# Visualise the commit history
-git log --oneline --graph --decorate --all
+2.  Cut a `new-branch` branch (probably from `main`, but possibly also from the existing `feature-branch` from which we'll cherry pick) 
 
-# Inspect the diff of a single commit
-git show {{hash}} 
-```
+    ```sh
+    git checkout main
+    # cut branch
+    git checkout -b {{new-branch}}
+    ```
 
-Add the single commit from the `feature-branch` to the `other-feature-branch`
+3.  Add the single commit from the `feature-branch` to the `new-branch`
 
-```sh
-git cherry-pick {{hash}}
-```
+    ```sh
+    git cherry-pick {{hash}}
+    ```
