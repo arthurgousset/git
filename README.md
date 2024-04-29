@@ -227,6 +227,8 @@ If you want to rewrite the commit history of a branch, you can use an interactiv
    git branch -D <backup-branch>
    ```
 
+## Concepts and Syntax
+
 ## Branches
 
 ### Open branch from remote repository
