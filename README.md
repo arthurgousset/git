@@ -56,6 +56,34 @@ Source: [git-scm.com](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History
 
 ### Branching and Merging
 
+#### `git branch -m` (rename branch)
+
+Source: [git-scm.com > `git branch -m`](https://git-scm.com/docs/git-branch#Documentation/git-branch.txt--m)
+
+> Move/rename a branch, together with its config and reflog.
+
+Syntax:
+
+```sh
+git branch --move {{current-branch-name}} {{new-branch-name}}
+```
+
+Example:
+
+```sh
+# before
+git branch
+  arthurgousset/feat/add-USDC-on-Celo-Alfajores
+* main
+
+git branch --move arthurgousset/feat/add-USDC-on-Celo-Alfajores arthurgousset/OLD/feat/add-USDC-on-Celo-Alfajores
+
+# after
+git branch
+  arthurgousset/OLD/feat/add-USDC-on-Celo-Alfajores
+* main
+```
+
 #### Open branch from remote repository
 
 ```sh
@@ -558,3 +586,33 @@ Source: Warp AI
     ```sh
     git cherry-pick {{hash}}
     ```
+
+### See stashed changes
+
+Source: ChatGPT
+
+
+To see all the stashes you have stored in your repository, you can use the command:
+
+```sh
+$ git stash list
+```
+
+This command will list all your stashes in a stack-like structure (last in, first out). Each entry in the stash list is given an index, starting from 0, in the format: `stash@{index}`. For example:
+
+```sh
+stash@{0}: WIP on feature-branch: 3203abc Adding new features
+stash@{1}: On master: 9fd5bca Fix something
+```
+
+If you want to see the detailed changes in a specific stash, you can use the `git stash show` command with the `-p` (or `--patch`) option, which shows the diff of what’s in the stash as compared to its original parent commit:
+
+```sh
+$ git stash show -p stash@{index}
+```
+
+Replace `index` with the number of the stash you want to inspect. For example:
+
+```sh
+$ git stash show -p stash@{0}
+```
