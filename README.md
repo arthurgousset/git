@@ -530,3 +530,30 @@ Source: ChatGPT
    ```sh
    git push origin main
    ```
+
+### Move a commit from a `feature-branch` to a new `other-feature-branch`
+
+Source: Warp AI
+
+Cut a new `other-feature-branch` branch (probably from `main`, but possibly also from the existing `feature-branch` from which we'll cherry pick) 
+
+```sh
+git checkout main
+git checkout -b {{other-feature-branch}}
+```
+
+Find the hash of the commit you'd like to move
+
+```sh
+# Visualise the commit history
+git log --oneline --graph --decorate --all
+
+# Inspect the diff of a single commit
+git show {{hash}} 
+```
+
+Add the single commit from the `feature-branch` to the `other-feature-branch`
+
+```sh
+git cherry-pick {{hash}}
+```
