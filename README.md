@@ -370,7 +370,7 @@ It's common to remove a remote when you no longer want to track a repository. It
 To bring in the history and changes from a remote repository, you use:
 
 ```sh
-git fetch <name>
+git fetch {{repository}}
 ```
 
 This command downloads objects and refs from the remote but doesn't merge any changes into your
