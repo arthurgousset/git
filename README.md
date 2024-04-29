@@ -18,7 +18,7 @@ Source: [git-scm.com](https://git-scm.com/docs)
 
 ## Typical workflows
 
-## Update `feature-branch` with latest commits from the `main` branch
+### Update `feature-branch` with latest commits from the `main` branch
 
 1. **Checkout the `main` branch**:
 
