@@ -54,7 +54,6 @@ First make the changes you think you forgot, stage those changes, and the subseq
 
 Source: [git-scm.com](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History)
 
-
 ### Branching and Merging
 
 #### Open branch from remote repository
@@ -542,10 +541,11 @@ Source: Warp AI
     git log --oneline --graph --decorate --all
 
     # Inspect the diff of a single commit
-    git show {{hash}} 
+    git show {{hash}}
     ```
 
-2.  Cut a `new-branch` branch (probably from `main`, but possibly also from the existing `feature-branch` from which we'll cherry pick) 
+2.  Cut a `new-branch` branch (probably from `main`, but possibly also from the existing
+    `feature-branch` from which we'll cherry pick)
 
     ```sh
     git checkout main
