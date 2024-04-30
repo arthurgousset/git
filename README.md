@@ -58,7 +58,8 @@ Source: [git-scm.com](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History
 
 #### `git branch -m` (rename branch)
 
-Source: [git-scm.com > `git branch -m`](https://git-scm.com/docs/git-branch#Documentation/git-branch.txt--m)
+Source:
+[git-scm.com > `git branch -m`](https://git-scm.com/docs/git-branch#Documentation/git-branch.txt--m)
 
 > Move/rename a branch, together with its config and reflog.
 
@@ -591,21 +592,23 @@ Source: Warp AI
 
 Source: ChatGPT
 
-
 To see all the stashes you have stored in your repository, you can use the command:
 
 ```sh
 $ git stash list
 ```
 
-This command will list all your stashes in a stack-like structure (last in, first out). Each entry in the stash list is given an index, starting from 0, in the format: `stash@{index}`. For example:
+This command will list all your stashes in a stack-like structure (last in, first out). Each entry
+in the stash list is given an index, starting from 0, in the format: `stash@{index}`. For example:
 
 ```sh
 stash@{0}: WIP on feature-branch: 3203abc Adding new features
 stash@{1}: On master: 9fd5bca Fix something
 ```
 
-If you want to see the detailed changes in a specific stash, you can use the `git stash show` command with the `-p` (or `--patch`) option, which shows the diff of what’s in the stash as compared to its original parent commit:
+If you want to see the detailed changes in a specific stash, you can use the `git stash show`
+command with the `-p` (or `--patch`) option, which shows the diff of what’s in the stash as compared
+to its original parent commit:
 
 ```sh
 $ git stash show -p stash@{index}
@@ -625,10 +628,11 @@ Source: ChatGPT
 
     ```sh
     $ git branch -D {{feature-branch}} # force delete
-    $ git branch -d {{feature-branch}} # delete if changes have been merged
     ```
 
-    To delete the branch locally, you can use the `git branch -d` command. If the branch has changes that haven't been merged, Git will prevent deletion to safeguard your work. If you're certain you want to delete it anyway, you can use `-D` which is a force delete.
+    To delete the branch locally, you can use the `git branch -d` command. If the branch has changes
+    that haven't been merged, Git will prevent deletion to safeguard your work. If you're certain
+    you want to delete it anyway, you can use `-D` which is a force delete.
 
 1.  Push deletion to `remote`
 
@@ -636,32 +640,18 @@ Source: ChatGPT
     $ git push {{remote}} --delete {{feature-branch}}
     ```
 
-    For example:
+    Replace `{{remote}}` with `origin` or another alias. `origin` is the default name for the
+    primary remote. Replace `feature-branch` with the name of the branch you want to delete. This
+    command tells Git to push a delete command for the specified branch to the remote repository.
 
-    ```sh
-    $ git push origin --delete arthurgousset/feature-branch
-
-    # Where remote is `origin`
-    $ git remote -v
-    origin	git@github.com:celo-org/developer-tooling.git (fetch)
-    origin	git@github.com:celo-org/developer-tooling.git (push)
-    ```
-
-    Here, `origin` is the name of your remote (which is the default name for the primary remote). Replace `feature-branch` with the name of the branch you want to delete. This command tells Git to push a delete command for the specified branch to the remote repository.
-
-1.  Confirm deletion by listing local and remote branches
-    
-    List local branches:
-
-    ```sh
-    $ git branch
-    ```
-
-    List remote branches:
+1.  Confirm deletion by listing remote branches
 
     ```sh
     $ git fetch --prune
     $ git branch -r
     ```
 
-    Here, `fetch --prune` cleans up any remote-tracking references that no longer exist on the remote. `git branch -r` lists all remote branches known to your local repository. These branch names are prefixed with the name of the remote repository, such as `origin/`, for example `origin/main` or `origin/feature-branch`.
+    Here, `fetch --prune` cleans up any remote-tracking references that no longer exist on the
+    remote. `git branch -r` lists all remote branches known to your local repository. These branch
+    names are prefixed with the name of the remote repository, such as `origin/`, for example
+    `origin/main` or `origin/feature-branch`.
