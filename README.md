@@ -616,3 +616,52 @@ Replace `index` with the number of the stash you want to inspect. For example:
 ```sh
 $ git stash show -p stash@{0}
 ```
+
+### Delete `feature-branch` on remote
+
+Source: ChatGPT
+
+1.  Delete local `feature-branch`
+
+    ```sh
+    $ git branch -D {{feature-branch}} # force delete
+    $ git branch -d {{feature-branch}} # delete if changes have been merged
+    ```
+
+    To delete the branch locally, you can use the `git branch -d` command. If the branch has changes that haven't been merged, Git will prevent deletion to safeguard your work. If you're certain you want to delete it anyway, you can use `-D` which is a force delete.
+
+1.  Push deletion to `remote`
+
+    ```sh
+    $ git push {{remote}} --delete {{feature-branch}}
+    ```
+
+    For example:
+
+    ```sh
+    $ git push origin --delete arthurgousset/feature-branch
+
+    # Where remote is `origin`
+    $ git remote -v
+    origin	git@github.com:celo-org/developer-tooling.git (fetch)
+    origin	git@github.com:celo-org/developer-tooling.git (push)
+    ```
+
+    Here, `origin` is the name of your remote (which is the default name for the primary remote). Replace `feature-branch` with the name of the branch you want to delete. This command tells Git to push a delete command for the specified branch to the remote repository.
+
+1.  Confirm deletion by listing local and remote branches
+    
+    List local branches:
+
+    ```sh
+    $ git branch
+    ```
+
+    List remote branches:
+
+    ```sh
+    $ git fetch --prune
+    $ git branch -r
+    ```
+
+    Here, `fetch --prune` cleans up any remote-tracking references that no longer exist on the remote. `git branch -r` lists all remote branches known to your local repository. These branch names are prefixed with the name of the remote repository, such as `origin/`, for example `origin/main` or `origin/feature-branch`.
